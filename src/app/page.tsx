@@ -11,14 +11,14 @@ export default function Home() {
 
     //Функция для авторизации
     const handleLogin = () => {
-        const correctLogin:string = 'Admin';
-        const correctPassword:string = 'pswrd';
+        const correctLogin:string = "Admin";
+        const correctPassword:string = "pswrd2";
 
         if (login === correctLogin && password === correctPassword) {
             // Переход на главную страницу при успешной авторизации
-            router.push('/main');
+            router.push("/main");
         } else {
-            alert('Неверный логин или пароль');
+            alert("Неверный логин или пароль");
         }
     };
 
