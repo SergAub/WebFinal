@@ -19,3 +19,22 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.button {
+  @apply bg-BtnBG border border-Stroke drop-shadow-md text-text px-8 max-h-12 min-h-10 m-4 rounded-lg
+  hover:bg-BlueBG
+  active:text-BlueBG active:bg-Stroke;
+}
+
+.input {
+  @apply bg-white border border-Stroke text-text shadow-md rounded-lg max-h-12 min-h-10 m-4 p-4
+  active:bg-BlueBG;
+}
+
+.switch {
+  @apply bg-BlueBG;
+}
+
+.shadow-up {
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.15);
+}

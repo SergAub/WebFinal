@@ -11,6 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        text: "#4F4F4F",
+        Stroke: "#79A1BD",
+        BtnBG: "#D6F1FF",
+        BlueBG: "#F6FCFF",
+        GreyBG: "#F7F8F9",
+        White: "#FFFFFF",
       },
     },
   },
