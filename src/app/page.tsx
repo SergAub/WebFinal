@@ -1,8 +1,5 @@
 "use client"
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -25,9 +22,8 @@ export default function Home() {
 
   return (
     <div>
-      <Header/>
         <div className="bg-GreyBG flex items-center justify-center min-h-screen">
-            <div className="bg-BlueBG border border-Stroke rounded-lg p-6 flex
+            <div className="bg-BlueBG rounded-lg p-6 flex
             flex-col items-center shadow-lg">
                 <input className="input"
                        placeholder="Логин"
@@ -42,7 +38,6 @@ export default function Home() {
                 <button className="button" onClick={handleLogin}>Войти</button>
             </div>
         </div>
-      <Footer/>
     </div>
   );
 }
