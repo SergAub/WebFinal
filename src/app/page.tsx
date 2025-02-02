@@ -12,7 +12,7 @@ export default function Home() {
     //Функция для авторизации
     const handleLogin = () => {
         const correctLogin:string = "Admin";
-        const correctPassword:string = "pswrd2";
+        const correctPassword:string = "pswrd";
 
         if (login === correctLogin && password === correctPassword) {
             // Переход на главную страницу при успешной авторизации
