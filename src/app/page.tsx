@@ -2,15 +2,17 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import {AppRouterInstance} from "next/dist/shared/lib/app-router-context.shared-runtime";
 
 export default function Home() {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
-    const router = useRouter();
+    const router:AppRouterInstance = useRouter();
 
+    //Функция для авторизации
     const handleLogin = () => {
-        const correctLogin = 'Admin';
-        const correctPassword = 'pswrd';
+        const correctLogin:string = 'Admin';
+        const correctPassword:string = 'pswrd';
 
         if (login === correctLogin && password === correctPassword) {
             // Переход на главную страницу при успешной авторизации
